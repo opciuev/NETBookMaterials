@@ -3,6 +3,12 @@
 namespace FluentValidation;
 public static class UriValidators
 {
+    /// <summary>
+    /// 验证一个 Uri 对象不是 null 且其原始字符串不为空或空白
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="ruleBuilder"></param>
+    /// <returns></returns>
     public static IRuleBuilderOptions<T, Uri> NotEmptyUri<T>(this IRuleBuilder<T, Uri> ruleBuilder)
     {
         return ruleBuilder.Must(p => p == null || !string.IsNullOrWhiteSpace(p.OriginalString))

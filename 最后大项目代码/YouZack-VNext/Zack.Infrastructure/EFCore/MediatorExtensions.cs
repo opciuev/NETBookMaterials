@@ -21,6 +21,12 @@ namespace MediatR
         {
             return services.AddMediatR(assemblies.ToArray());
         }
+        /// <summary>
+        /// 异步分发领域事件
+        /// </summary>
+        /// <param name="mediator"></param>
+        /// <param name="ctx"></param>
+        /// <returns></returns>
         public static async Task DispatchDomainEventsAsync(this IMediator mediator, DbContext ctx)
         {
             var domainEntities = ctx.ChangeTracker

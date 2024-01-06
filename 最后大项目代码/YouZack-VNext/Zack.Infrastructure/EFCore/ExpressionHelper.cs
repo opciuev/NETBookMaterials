@@ -8,6 +8,7 @@ public class ExpressionHelper
 {
     /// <summary>
     /// Users.SingleOrDefaultAsync(MakeEqual((User u) => u.PhoneNumber, phoneNumber))
+    /// 用于比较 TItem 类型的对象的属性与另一个 TProp 类型对象的相应属性是否相等
     /// </summary>
     /// <typeparam name="TItem"></typeparam>
     /// <typeparam name="TProp"></typeparam>

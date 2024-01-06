@@ -4,6 +4,9 @@ using System.Linq;
 namespace FluentValidation;
 public static class EnumerableValidators
 {
+
+    /// FluentValidation 用于额外的集合验证逻辑
+
     /// <summary>
     /// 集合中没有重复元素
     /// </summary>

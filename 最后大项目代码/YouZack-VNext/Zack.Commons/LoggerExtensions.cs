@@ -2,6 +2,9 @@
 
 namespace Microsoft.Extensions.Logging
 {
+    /// <summary>
+    /// 用于扩展 Microsoft.Extensions.Logging.ILogger 接口的功能
+    /// </summary>
     public static class LoggerExtensions
     {
         public static void LogInterpolatedCritical(this ILogger logger, FormattableString formattableString,
